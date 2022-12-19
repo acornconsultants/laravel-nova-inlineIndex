@@ -21,7 +21,7 @@ export default {
     submit() {
       return Nova.request()
         .post(
-          `/inline-index/update/${this.resourceName}`,
+          `/nova-api/inline-index/update/${this.resourceName}`,
           {
           	id: this.resourceId,
             attribute: this.field.attribute,
